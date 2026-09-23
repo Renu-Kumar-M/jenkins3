@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-       stage('Build') {
+       stage('deploy') {
     steps {
         bat '"C:\\Users\\YourUser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m py_compile app.py'
     }
