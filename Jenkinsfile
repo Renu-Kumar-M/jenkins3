@@ -15,11 +15,10 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                input message: 'Approve deployment to production?', ok: 'Deploy'
-                bat 'python app.py'
-            }
-        }
+        stage('Build') {
+    steps {
+        bat '"C:\\Users\\YourUser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m py_compile app.py'
+    }
+}
     }
 }
