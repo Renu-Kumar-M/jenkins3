@@ -15,10 +15,11 @@ pipeline {
             }
         }
 
-        stage('Build') {
+       stage('Build') {
     steps {
         bat '"C:\\Users\\YourUser\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m py_compile app.py'
     }
 }
+
     }
 }
